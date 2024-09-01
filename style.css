@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap'); /* Importa la fuente de las letras*/
+
+* { /* Aplica estilos a todos los elementos dentro HTML */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho y alto total del elemento */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    padding: 0; /* Elimina el relleno predeterminado */
+    font-family: 'Nunito', sans-serif; /* Aplica la fuente 'Nunito' como predeterminada */
+    font-size: 25px; /* Se asigna tamaño de la fuente en 20px */
+}
+
+body {
+    background-color: #ffffff; /* Establece el color de fondo del fondo*/
+}
+
+.header {
+    display: flex; /* Aplica un modelo de caja flexible a la barra de navegacion */
+    justify-content: flex-end; /* Alinea los elementos dentro de la barra de navegacion hacia el extremo derecho */
+    align-items: center; /* Alinea los elementos al centro */
+    height: 100px; /* Define la altura de la barra de navegacion en 100px */
+    padding: 5px 10%; /* Agrega 5px de relleno arriba y abajo, y 10% de relleno a los lados */
+    position: relative;
+    z-index: 2;
+    animation: borderChange 5s infinite;
+    background: transparent;
+    backdrop-filter: blur(2px);
+
+}
+
+@keyframes borderChange {
+    0% { border-bottom: 1px solid rgb(255, 255, 255); }
+    10% { border-bottom: 1px solid rgb(0, 0, 0); }
+    20% { border-bottom: 1px solid rgb(255, 255, 255); }
+    30% { border-bottom: 1px solid rgb(0, 0, 0); }
+    40% { border-bottom: 1px solid rgb(255, 255, 255); }
+    50% { border-bottom: 1px solid rgb(0, 0, 0); }
+    60% { border-bottom: 1px solid rgb(255, 255, 255); }
+    70% { border-bottom: 1px solid rgb(0, 0, 0); }
+    80% { border-bottom: 1px solid rgb(255, 255, 255); }
+    90% { border-bottom: 1px solid rgb(0, 0, 0); }
+    100% { border-bottom: 1px solid rgb(255, 255, 255); }
+}
+
+
+
+.header .casalogo {
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el logo, indicando que es clicable */
+    margin-right: auto; /* Empuja el logo a la izquierda, permitiendo que otros elementos se alineen a la derecha */
+}
+
+.header .casalogo img {
+    height: 50px; /* Establece la altura de la imagen del logo */
+    width: auto; /* Mantiene la proporción de la imagen al cambiar el tamaño */
+    transition: all 0.2s; /* Aplica una transición suave de 0.3s a todas las propiedades de la imagen */
+}
+
+.header .casalogo img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la imagen del logo al pasar el cursor por encima */
+}
+
+.header .nav-links {
+    list-style: none; /* Elimina los puntos de la lista para los enlaces de navegación */
+}
+
+.header .nav-links li {
+    display: inline-block; /* Coloca los elementos de la lista en línea, uno al lado del otro */
+    padding: 0 20px; /* Agrega 20px de relleno a los lados de cada enlace de navegación */
+}
+
+.header .nav-links li:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del enlace al pasar el cursor por encima */
+}
+
+.header .nav-links a {
+    font-size: 700; /* Aplica un peso de fuente de 700 (negrita) */
+    color: #eceff1; /* Establece el color del texto de los enlaces */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+
+}
+
+.header .nav-links li a:hover {
+    color: #000000; /* Cambia el color del enlace al pasar el cursor por encima */
+}
+
+.header .btn button {
+    margin-left: 20px; /* Agrega un margen de 20px a la izquierda del botón */
+    font-weight: 700; /* Aplica un peso de fuente de 700 (negrita) al texto del botón */
+    color: #1b3039; /* Establece el color del texto del botón de registrarse */
+    padding: 9px 25px; /* Agrega 9px de relleno arriba y abajo, y 25px a los lados del botón */
+    background: #eceff1; /* Establece el color de fondo del botón registrarse*/
+    border: none; /* Elimina cualquier borde del botón */
+    border-radius: 50px; /* Redondea las esquinas del boton*/
+    cursor: pointer; /* Cambia el cursor a una mano al pasar sobre el boton */
+    transition: all 0.5s ease 0s; /* Aplica una transición suave a todas las propiedades del boton */
+
+}
+
+.header .btn button:hover {
+    background-color: #e2f1f8; /* Cambia el color de fondo del boton  al pasar el cursor */
+    color: #000000; /* Cambia el color del texto del boton al pasar el cursor */
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño del botón al pasar el cursor por encima */
+}
+
+
+#hero{
+    min-height: 100vh;
+    position: relative;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+}
+
+.inicio_pat{
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 70px;
+    color: white;
+    font-size: 35px;
+}
+
+
+.logo{
+    width: 200px;
+    height: 200px;
+    position: absolute; /* O fixed si quieres que siempre esté visible en la ventana, incluso al hacer scroll */
+    top: 150px; /* Ajusta la posición desde el borde superior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+
+.a1{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 40px ; /* Ajusta la posición desde el borde superior */
+    margin-left: 435px; /* Centra horizontalmente */
+    text-decoration: none;
+    width: 500px;
+    height: 200px;
+    color: white;
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+.a2{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 66px ; /* Ajusta la posición desde el borde superior */
+    margin-left: 412px; /* Centra horizontalmente */
+    text-decoration: none;
+    width: 500px;
+    height: 200px;
+    color: white;
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+.a3{
+    position: absolute;
+    text-decoration: none;
+    margin-top: 90px ; /* Ajusta la posición desde el borde superior */
+    margin-left: 385px; /* Centra horizontalmente */
+    text-decoration: none;
+    width: 500px;
+    height: 200px;
+    color: white;
+    transform: translateX(-50%); /* Ajusta para centrar exactamente */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos en columna */
+    align-items: center; /* Centra horizontalmente los elementos */
+    justify-content: center; /* Centra verticalmente los elementos */
+    height: 100vh; /* Toma toda la altura de la ventana */
+}
