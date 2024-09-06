@@ -614,7 +614,7 @@ remember-forgot {
   margin: 0 auto;
 }
 
-.astronautarotativo img {
+.astronauta {
   margin: 0 auto;
   margin-top: 10px;
   width: 300px;
@@ -634,13 +634,15 @@ remember-forgot {
   margin: 0 auto;
   text-align: center;
   justify-content: space-around;
+
+  padding: 0;
 }
 
 .botones_modos a {
   font-weight: 500;
   border-radius: 20px;
   border: solid 2px white;
-  margin-left: 500px;
+
   margin: 10px 140px;
   padding: 10px 30px;
   position: relative;
@@ -730,4 +732,17 @@ remember-forgot {
       /* Sombra verde */ 2px -2px 0px #ff2f00,
       /* Sombra azul */ -2px -2px 0px #ff0062;
   }
+}
+
+.perfil_img{
+
+  height: 50px;
+  text-align: right;
+}
+
+.perfil_img img{
+  margin-top: 10px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
 }
