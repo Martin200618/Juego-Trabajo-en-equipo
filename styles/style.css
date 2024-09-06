@@ -608,3 +608,31 @@ remember-forgot {
     box-shadow: black 4px 4px 4px;
 
 }
+
+
+
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+.astronautarotativo{
+  width: 1000px;
+  height: 900px;
+  border: solid 2px white ;
+  text-align: center;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 300px; 
+  height: auto;
+  animation: rotate 5s linear infinite;
+}
