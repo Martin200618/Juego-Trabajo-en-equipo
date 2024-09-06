@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+
+
+<body>
+    <header class="header">
+
+        <div class="casalogo"> <a href="./Index.html"><img src="./Logos/logocasa.png" alt="Logo de la marca"></a></div>
+        <a class="btn" href="./iniciar_sesion.html"><button>Iniciar sesión</button></a>
+
+    </header>
+
+
+    <!--<audio id="musicaDeFondo" src="./Audios/Fondomusica.mp3" autoplay></audio>-->
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <video muted autoplay loop >
+        <source src="./Logos/131035-749706665_medium.mp4" type="video/mp4">
+    </video>
+
+    <div class="capa"></div>
+
+    <div class="container_mayor">
+        <div class="container_padre_login_registrarse">
+            <div class="container_login login">
+               
+                <div class="container_texto">
+                    <div class="container_letras">
+                        <span class="letras">R</span>
+                        <span class="letras">e</span>
+                        <span class="letras">g</span>
+                        <span class="letras">i</span>
+                        <span class="letras">s</span>
+                        <span class="letras">t</span>
+                        <span class="letras">r</span>
+                        <span class="letras">a</span>
+                        <span class="letras">r</span>
+                        <span class="letras">s</span>
+                        <span class="letras">e</span>
+                    </div>
+                </div>
+
+                <form action="login.php" method="POST" name="formulario" class="form">
+                    <div class="input_container">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label><input type="text" id="inputEmail3" name="usuario">Usuario</label>
+                    </div>
+                    <div class="input_container">
+                        <span class="icon"><ion-icon name="mail-outline"></ion-icon></span>
+                        <input type="text" required>
+                        <label><input type="text" id="inputEmail3" name="correo">Correo</label>
+                    </div>
+                    <div class="input_container password-container">
+                        <span class="icon password-icon" >
+                            <ion-icon name="lock-closed-outline" class="iconp" onclick="alternarVisibilidadContrasena()"></ion-icon>
+                            <ion-icon name="eye-outline" class="iconp icon-hover" onclick="alternarVisibilidadContrasena()"></ion-icon>
+                        </span>
+                        <input type="password" id="password" required>
+                        <label>
+                            <input type="password" id="password" name="contrasena">
+                            Contraseña
+                        </label>
+                    </div>
+                    
+                    <script src="./scripts/script.js"></script>
+                    
+                    <div class="check_condiciones">
+                        <input class="input_check_condiciones" type="checkbox">
+                        <a href="./terminos_condiciones.html" class="terminos_condiciones">Aceptar términos y condiciones</a>
+                    </div>
+                    <div class="boton_login">
+                        <button type="submit" class="btna">Crear cuenta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  
+
+</body>
+</html>

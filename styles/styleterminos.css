@@ -1,0 +1,77 @@
+body {
+    background: rgb(255, 255, 255);
+}
+
+.logo_negro img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 30px;
+    transition: all 0.2s;
+}
+
+.logo_negro:hover {
+    transform: scale(1.1);
+}
+
+.contenido_terminos {
+    color: #000;
+    font-size: 14px;
+    background-color: #ececec;
+    padding: 15px;
+    border: solid black 2px;
+}
+
+.list-group {
+    border: solid 2px black;
+    transition: all 0.2s;
+}
+
+.list-group a {
+   font-size: 18px;
+   overflow-wrap: break-word;
+}
+
+.list-group a:hover {
+    background: transparent;
+    transform: scale(1.05);
+    font-weight: 600;
+    color: rgb(10, 0, 143);
+   border: none;
+}
+
+.contenido_terminos p {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.contenido_terminos h1 {
+    color: black;
+    font-size: 28px;
+}
+
+.negrilla {
+    font-weight: 700;
+}
+
+.volvericon {
+    margin: 10px;
+}
+
+.volvericon img {
+    width: auto;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    .contenido_terminos {
+        margin-left: 0;
+    }
+
+    .logo_negro img {
+        max-width: 120px;
+    }
+
+    .list-group a {
+        font-size: 16px;
+    }
+}

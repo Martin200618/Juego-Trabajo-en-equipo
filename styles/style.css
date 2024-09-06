@@ -1,0 +1,610 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+}
+
+body {
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 70px;
+  padding: 5px 10%;
+  position: relative;
+  z-index: 2;
+  animation: borderChange 5s infinite;
+  background: transparent;
+  backdrop-filter: blur(2px);
+}
+
+@keyframes borderChange {
+  0% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  10% {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  20% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  30% {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  40% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  50% {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  60% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  70% {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  80% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+  90% {
+    border-bottom: 1px solid rgb(0, 0, 0);
+  }
+  100% {
+    border-bottom: 1px solid rgb(255, 255, 255);
+  }
+}
+
+.header .casalogo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .casalogo img {
+  height: 40px;
+  width: auto;
+  transition: all 0.2s;
+}
+
+.header .casalogo img:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links {
+  list-style: none;
+}
+
+.header .nav-links li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.header .nav-links li:hover {
+  transform: scale(1.1);
+}
+
+.header .nav-links a {
+  font-size: 700;
+  color: #eceff1;
+  text-decoration: none;
+}
+
+.header .nav-links li a:hover {
+  transition: all 0.5s ease 0s;
+  transform: scale(1.1);
+  color: #e5ff00;
+}
+
+.header .btn button {
+  font-size: 23px;
+  margin-left: 20px;
+  font-weight: 600;
+  color: #1b3039;
+  padding: 6px 20px;
+  background: #eceff1;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+  width: 190px;
+  height: auto;
+}
+
+.header .btn button:hover {
+  background-color: #e2f1f8;
+  color: #000000;
+  transform: scale(1.1);
+}
+
+#hero {
+  min-height: 100vh;
+  position: relative;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #1c1c1d;
+  opacity: 0.5;
+  mix-blend-mode: overlay;
+}
+
+.inicio_pat {
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 70px;
+  color: white;
+  font-size: 35px;
+}
+
+.logo {
+  width: 230px;
+  height: 200px;
+  position: relative;
+  margin: 0 auto;
+
+}
+
+.logo img {
+  text-align: center;
+  width: 200px;
+  align-self: center;
+  margin: 0 auto;
+  margin-left: 10px;
+
+}
+
+.container_principalindex {
+  height: auto;
+  width: 500px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+
+}
+
+.moda{
+    z-index: 1
+}
+
+.container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 650px;
+  margin-top: 10px;
+  position: absolute;
+
+}
+
+.a1,
+.a2,
+.a3 {
+
+  text-decoration: none;
+  height: auto;
+  margin: 20px 0;
+  color: rgb(255, 255, 255);
+  transition: all 0.2s;
+  cursor: pointer;
+  font-weight: 600 ;
+
+}
+
+
+
+/* Responsive  */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+
+  .header .btn {
+    margin: 10px 0;
+  }
+}
+
+.container_mayor {
+  margin-top: 15px;
+  width: 100%; /* O un ancho específico */
+}
+
+.container_padre_login {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.6 ease;
+  margin: 0 auto;
+}
+
+.container_padre_login_registrarse {
+  position: relative;
+  width: 400px;
+  height: 460px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: height 0.6 ease;
+  margin: 0 auto;
+}
+
+.container_padre_login .active {
+  height: 520px;
+}
+
+.container_padre_login .container_login {
+  width: 100%;
+  padding: 50px;
+}
+
+.container_padre_login .container_login.login {
+  transition: transform 0.18 ease;
+  transform: translateX(0);
+}
+
+.container_padre_login .active .container_login.login {
+  transition: none;
+  transform: translateX(-400px);
+}
+
+.container_login h2 {
+  font-size: 40px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.container_texto {
+  margin-top: -30px;
+  margin-left: 50px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_letras {
+  margin-top: 5px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+  display: flex;
+}
+
+.letras {
+  font-size: 40px;
+  color: #ffffff;
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite;
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+/* Aplicar un retraso diferente a cada letra usando una pseudo-clase */
+.container_letras .letras:nth-child(1) {
+  animation-delay: 0s;
+}
+.container_letras .letras:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.container_letras .letras:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.container_letras .letras:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.container_letras .letras:nth-child(5) {
+  animation-delay: 0.4s;
+}
+.container_letras .letras:nth-child(6) {
+  animation-delay: 0.5s;
+}
+.container_letras .letras:nth-child(7) {
+  animation-delay: 0.6s;
+}
+.container_letras .letras:nth-child(8) {
+  animation-delay: 0.7s;
+}
+.container_letras .letras:nth-child(9) {
+  animation-delay: 0.8s;
+}
+.container_letras .letras:nth-child(10) {
+  animation-delay: 0.9s;
+}
+.container_letras .letras:nth-child(11) {
+  animation-delay: 1s;
+}
+.container_letras .letras:nth-child(12) {
+  animation-delay: 1.1s;
+}
+
+.input_container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #ffffff;
+  margin: 30px 0;
+}
+
+.input_container label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-65%);
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.input_container input:focus ~ label,
+.input_container input:valid ~ label {
+  top: -5px;
+}
+
+.input_container input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input_container .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #ffffff;
+  line-height: 57px;
+}
+
+remember-forgot {
+  font-size: 0.9em;
+  color: #152938;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.boton_login label input {
+  accent-color: #ffffff;
+  margin-right: 3px;
+}
+
+.boton_login a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.boton_login a:hover {
+  text-decoration: underline;
+}
+
+.btna {
+  width: 100%;
+  height: 45px;
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #000000;
+  font-weight: 500;
+  margin-top: 30px;
+  transition: all 0.2s;
+  margin-bottom: 5px;
+}
+
+.btna:hover {
+  font-weight: 600;
+  background-color: #e9e9e9;
+  transform: scale(1.1);
+  box-shadow: black 4px 4px 4px;
+  border-radius: 45px;
+}
+
+.casalogo_register {
+  height: 30px;
+  width: auto;
+  transition: all 0.2s;
+}
+
+.check_condiciones {
+  margin-top: 2px;
+  width: 330px;
+}
+
+.terminos_condiciones {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  display: inline-block;
+  color: white;
+}
+
+.terminos_condiciones::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  transition: all 0.3s ease-out;
+  transform: translateX(-50%);
+}
+
+.terminos_condiciones:hover::before {
+  width: 100%;
+}
+
+.olvidaste_contrasena {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.olvidaste_contrasena a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0 auto;
+}
+
+.header .volvericon {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.header .volvericon img {
+  margin-left: 900px;
+  height: 50px;
+  width: auto;
+  transition: all 0.2s;
+}
+
+.header .volvericon img:hover {
+  transform: scale(1.1);
+}
+
+.input_container input[type="text"],
+.input_container input[type="password"] {
+  width: 100%; /* Ajusta el ancho del campo de entrada */
+}
+
+.password-icon {
+  margin-top: 10px;
+}
+
+/* Estilos específicos para el campo de contraseña */
+.password-container .icon {
+  cursor: pointer;
+}
+
+.password-container .iconp {
+  display: block;
+}
+
+.password-container .icon-hover {
+  display: none;
+}
+
+.password-container:hover .iconp {
+  display: none;
+}
+
+.password-container:hover .icon-hover {
+  display: block;
+}
+
+
+.modal-content {
+    border-radius: 10px; /* Bordes redondeados */
+    background: #f8f9fa; /* Fondo del modal */
+    border: 1px solid #dee2e6; /* Borde del modal */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del modal */
+}
+
+.modal-header {
+    text-align: center;
+    background: #5a5a5a; /* Fondo del encabezado del modal */
+    color: #fff; /* Color del texto del encabezado */
+    border-bottom: 1px solid #0069d9; /* Borde inferior del encabezado */
+    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+}
+
+.modal-title {
+    font-size: 30px; /* Tamaño de la fuente del título del modal */
+}
+
+.btn-close {
+
+    filter: invert(1); /* Hacer el botón de cierre blanco */
+}
+
+.modal-body {
+    padding: 20px; /* Relleno del cuerpo del modal */
+    font-size: 20px; /* Tamaño de la fuente del cuerpo */
+    color: #000000; /* Color del texto del cuerpo */
+}
+
+.modal-footer {
+    background: #f1f1f1; /* Fondo del pie del modal */
+    border-top: 1px solid #dee2e6; /* Borde superior del pie del modal */
+    border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
+    border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
+}
+
+.btn-secondary {
+    transition: all 0.2s;
+    padding: 5px;
+    background-color: #be3434; /* Color de fondo del botón de cerrar */
+    border: none; /* Quitar borde del botón de cerrar */
+    border-radius: 5px; /* Bordes redondeados del botón de cerrar */
+    color: #ffffff; /* Color del texto del botón de cerrar */
+}
+
+.btn-secondary:hover {
+    font-weight: 600;
+
+    transform: scale(1.1);
+    box-shadow: black 4px 4px 4px;
+
+}

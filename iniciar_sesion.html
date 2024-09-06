@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    
+</head>
+
+
+<body>
+    <header class="header">
+
+        <div class="casalogo"> <a href="./Index.html"><img src="./Logos/logocasa.png" alt="Logo de la marca"></a>
+        </div>
+        <a class="btn" href="./registrarse.html"><button>Crear cuenta</button></a>
+    </header>
+<br>
+
+    <!--<audio id="musicaDeFondo" src="./Audios/Fondomusica.mp3" autoplay></audio>-->
+    
+    <script src="./scripts/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <video muted autoplay loop >
+        <source src="./Logos/131035-749706665_medium.mp4" type="video/mp4">
+    </video>
+
+    <div class="capa"></div>
+
+    <div class="container_mayor">
+        <div class="container_padre_login">
+            <div class="container_login login">
+                <h2>Iniciar sesión</h2>
+                <form action="login.php" method="POST" name="formulario" class="form">
+                    <div class="input_container">
+                        <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                        <input type="text" name="user_logi_inve" required>
+                        <label><input type="text" id="#" name="#">Usuario</label>
+                    </div>
+                    <div class="input_container password-container">
+                        <span class="icon password-icon" onclick="alternarVisibilidadContrasena()">
+                            <ion-icon name="lock-closed-outline" class="iconp"></ion-icon>
+                            <ion-icon name="eye-outline" class="iconp icon-hover"></ion-icon>
+                        </span>
+                        <input type="password" id="password" name="cont_logi_inve" required>
+                        <label>
+                            <input type="password" id="password" name="#">
+                            Contraseña
+                        </label>
+                    </div>
+
+                    <div class="boton_login">
+                        <button type="submit" class="btna" value="Acceder" name="validar">Entrar</button>
+                    </div>
+
+                    <div class="olvidaste_contrasena">
+                        <a href="">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  
+
+</body>
+</html>
