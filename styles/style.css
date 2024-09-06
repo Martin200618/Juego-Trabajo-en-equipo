@@ -8,13 +8,15 @@
   font-size: 25px;
 }
 
+
+/*Estilos del Body Cuerpo de las paginas */
 body {
-  background-color: #000000;
-  justify-content: center;
-  align-items: center;
+  background-color: #000000; /* Fondo */
+  justify-content: center; /* Centra los containers */
+  align-items: center; /* Alinea los containers */
   min-height: 100vh;
 }
-
+ /*Estilos de la barra de navegación */
 .header {
   display: flex;
   justify-content: flex-end;
@@ -28,6 +30,9 @@ body {
   backdrop-filter: blur(2px);
 }
 
+
+/*Esto lo que hace es que cambie de color según el porcentaje blanco - negro - blanco
+de la parte de abajo del borde del header */
 @keyframes borderChange {
   0% {
     border-bottom: 1px solid rgb(255, 255, 255);
@@ -200,6 +205,8 @@ video {
   position: absolute;
 }
 
+
+/*Estilos de las anclas del index o pagina de aterrizaje, principal */
 .a1,
 .a2,
 .a3 {
@@ -225,11 +232,15 @@ video {
   }
 }
 
+
+/*Container mayor de inicio de sesion y register */
 .container_mayor {
   margin-top: 15px;
   width: 100%; /* O un ancho específico */
 }
 
+
+/*Container de inicio de sesion */
 .container_padre_login {
   position: relative;
   width: 400px;
@@ -246,6 +257,7 @@ video {
   margin: 0 auto;
 }
 
+/* Container mayor de register*/
 .container_padre_login_registrarse {
   position: relative;
   width: 400px;
@@ -308,10 +320,12 @@ video {
   font-size: 40px;
   color: #ffffff;
   display: inline-block;
-  animation: wave 1.5s ease-in-out infinite;
+  animation: animacionInput 1.5s ease-in-out infinite;
 }
 
-@keyframes wave {
+
+/*Esto lo que hace es traladar la barra del input -7px hacia arriba del login y register */
+@keyframes animacionInput {
   0%,
   100% {
     transform: translateY(0);
@@ -427,7 +441,7 @@ remember-forgot {
   text-decoration: underline;
 }
 
-.btna {
+.btna { /* Estilo del botón de Entrar y Registrar  */
   width: 100%;
   height: 45px;
   background-color: #ffffff;
