@@ -14,16 +14,33 @@ body {
 }
 
 .contenido_terminos {
+    margin: 50px;
     color: #000;
     font-size: 14px;
     background-color: #ececec;
     padding: 15px;
     border: solid black 2px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 768px) {
+    .list-group {
+        display: block;
+    
+    }
+}
+/* Estilo para pantallas grandes */
+@media (min-width: 769px) {
+    .list-group {
+        display: none;
+    }
 }
 
 .list-group {
     border: solid 2px black;
     transition: all 0.2s;
+
 }
 
 .list-group a {
@@ -54,6 +71,7 @@ body {
 }
 
 .volvericon {
+    position: relative;
     margin: 10px;
 }
 
