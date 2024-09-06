@@ -6,7 +6,6 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 25px;
-
 }
 
 body {
@@ -165,7 +164,6 @@ video {
   height: 200px;
   position: relative;
   margin: 0 auto;
-
 }
 
 .logo img {
@@ -174,7 +172,6 @@ video {
   align-self: center;
   margin: 0 auto;
   margin-left: 10px;
-
 }
 
 .container_principalindex {
@@ -185,11 +182,10 @@ video {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
-
 }
 
-.moda{
-    z-index: 1
+.moda {
+  z-index: 1;
 }
 
 .container {
@@ -202,24 +198,19 @@ video {
   height: 650px;
   margin-top: 10px;
   position: absolute;
-
 }
 
 .a1,
 .a2,
 .a3 {
-
   text-decoration: none;
   height: auto;
   margin: 20px 0;
   color: rgb(255, 255, 255);
   transition: all 0.2s;
   cursor: pointer;
-  font-weight: 600 ;
-
+  font-weight: 600;
 }
-
-
 
 /* Responsive  */
 @media (max-width: 600px) {
@@ -554,78 +545,71 @@ remember-forgot {
   display: block;
 }
 
-
 .modal-content {
-    border-radius: 10px; /* Bordes redondeados */
-    background: #f8f9fa; /* Fondo del modal */
-    border: 1px solid #dee2e6; /* Borde del modal */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del modal */
+  border-radius: 10px; /* Bordes redondeados */
+  background: #f8f9fa; /* Fondo del modal */
+  border: 1px solid #dee2e6; /* Borde del modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra del modal */
 }
 
 .modal-header {
-    text-align: center;
-    background: #5a5a5a; /* Fondo del encabezado del modal */
-    color: #fff; /* Color del texto del encabezado */
-    border-bottom: 1px solid #0069d9; /* Borde inferior del encabezado */
-    border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
-    border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
+  text-align: center;
+  background: #5a5a5a; /* Fondo del encabezado del modal */
+  color: #fff; /* Color del texto del encabezado */
+  border-bottom: 1px solid #0069d9; /* Borde inferior del encabezado */
+  border-top-left-radius: 10px; /* Bordes redondeados en la esquina superior izquierda */
+  border-top-right-radius: 10px; /* Bordes redondeados en la esquina superior derecha */
 }
 
 .modal-title {
-    font-size: 30px; /* Tamaño de la fuente del título del modal */
+  font-size: 30px; /* Tamaño de la fuente del título del modal */
 }
 
 .btn-close {
-
-    filter: invert(1); /* Hacer el botón de cierre blanco */
+  filter: invert(1); /* Hacer el botón de cierre blanco */
 }
 
 .modal-body {
-    padding: 20px; /* Relleno del cuerpo del modal */
-    font-size: 20px; /* Tamaño de la fuente del cuerpo */
-    color: #000000; /* Color del texto del cuerpo */
+  padding: 20px; /* Relleno del cuerpo del modal */
+  font-size: 20px; /* Tamaño de la fuente del cuerpo */
+  color: #000000; /* Color del texto del cuerpo */
 }
 
 .modal-footer {
-    background: #f1f1f1; /* Fondo del pie del modal */
-    border-top: 1px solid #dee2e6; /* Borde superior del pie del modal */
-    border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
-    border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
+  background: #f1f1f1; /* Fondo del pie del modal */
+  border-top: 1px solid #dee2e6; /* Borde superior del pie del modal */
+  border-bottom-left-radius: 10px; /* Bordes redondeados en la esquina inferior izquierda */
+  border-bottom-right-radius: 10px; /* Bordes redondeados en la esquina inferior derecha */
 }
 
 .btn-secondary {
-    transition: all 0.2s;
-    padding: 5px;
-    background-color: #be3434; /* Color de fondo del botón de cerrar */
-    border: none; /* Quitar borde del botón de cerrar */
-    border-radius: 5px; /* Bordes redondeados del botón de cerrar */
-    color: #ffffff; /* Color del texto del botón de cerrar */
+  transition: all 0.2s;
+  padding: 5px;
+  background-color: #be3434; /* Color de fondo del botón de cerrar */
+  border: none; /* Quitar borde del botón de cerrar */
+  border-radius: 5px; /* Bordes redondeados del botón de cerrar */
+  color: #ffffff; /* Color del texto del botón de cerrar */
 }
 
 .btn-secondary:hover {
-    font-weight: 600;
+  font-weight: 600;
 
-    transform: scale(1.1);
-    box-shadow: black 4px 4px 4px;
-
+  transform: scale(1.1);
+  box-shadow: black 4px 4px 4px;
 }
-
-
 
 @keyframes rotate {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
-
-.astronautarotativo{
+.astronautarotativo {
   width: 1000px;
   height: 900px;
-
   text-align: center;
   margin: 0 auto;
 }
@@ -633,20 +617,18 @@ remember-forgot {
 .astronautarotativo img {
   margin: 0 auto;
   margin-top: 10px;
-  width: 300px; 
+  width: 300px;
   height: auto;
   animation: rotate 10s linear infinite;
 }
 
-.astronautarotativo h1{
+.astronautarotativo h1 {
   font-weight: 700;
   margin-top: 10px;
   color: white;
 }
 
-.botones_modos{
-
-
+.botones_modos {
   width: 1000px;
   height: 100px;
   margin: 0 auto;
@@ -654,7 +636,8 @@ remember-forgot {
   justify-content: space-around;
 }
 
-.botones_modos a{
+.botones_modos a {
+  font-weight: 500;
   border-radius: 20px;
   border: solid 2px white;
   margin-left: 500px;
@@ -666,10 +649,85 @@ remember-forgot {
 }
 
 
+.modo-historia:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+  font-weight: 600;
+  transform: scale(1.1);
+  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
+  border-radius: 45px;
+}
+
+.modo-multijugador:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+  font-weight: 600;
+  transform: scale(1.1);
+  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
+  border-radius: 45px;
+}
+
 .modo-historia {
   text-align: left;
 }
 
 .modo-multijugador {
   text-align: right;
+}
+
+/* Agregar sombra que simule un borde alrededor de las letras */
+.borde_animado {
+  animation: cambiarColor 3s infinite linear;
+}
+
+/* Animación para cambiar los colores del borde */
+@keyframes cambiarColor {
+  0% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  20% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+
+  30% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+
+  40% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+
+  50% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  65% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+  70% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  80% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+  90% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
 }
