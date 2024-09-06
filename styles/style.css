@@ -6,6 +6,7 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 25px;
+  position: relative;
 }
 
 body {
@@ -629,7 +630,7 @@ remember-forgot {
   margin: 0 auto;
 }
 
-img {
+.astronautarotativo img {
   margin: 0 auto;
   margin-top: 100px;
   width: 300px; 
