@@ -1,0 +1,27 @@
+.container_modohistoria{
+    height: 500px;
+    border:  solid 2px wheat;
+}
+
+.astronautau{
+    margin-top: 55px;
+    margin-left: 230px;
+    width: 250px;
+    height: auto;
+}
+
+.botones{
+    height: 100px;
+    width: 250px;
+    border:  solid 2px wheat;
+}
+
+
+@media (max-width: 600px) {
+ 
+  }
+
+
+
+
+

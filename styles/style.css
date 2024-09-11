@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
+
 
 * {
   box-sizing: border-box;
@@ -6,16 +6,21 @@
   padding: 0;
   font-family: "Nunito", sans-serif;
   font-size: 25px;
+  position: relative;
+
+
 }
 
 
 /*Estilos del Body Cuerpo de las paginas */
 body {
-  background-color: #000000; /* Fondo */
+
   justify-content: center; /* Centra los containers */
   align-items: center; /* Alinea los containers */
   min-height: 100vh;
 }
+
+
  /*Estilos de la barra de navegación */
 .header {
   display: flex;
@@ -29,6 +34,7 @@ body {
   background: transparent;
   backdrop-filter: blur(2px);
 }
+
 
 
 /*Esto lo que hace es que cambie de color según el porcentaje blanco - negro - blanco
@@ -130,20 +136,12 @@ de la parte de abajo del borde del header */
   transform: scale(1.1);
 }
 
-#hero {
+#hero{
   min-height: 100vh;
   position: relative;
 }
 
-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
+
 
 .capa {
   position: absolute;
@@ -225,11 +223,29 @@ video {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
+    width: 500px;
   }
 
-  .header .btn {
-    margin: 10px 0;
+  .btn{
+    margin-left: 115px ;
   }
+
+
+
+  .container_principalindex{
+    margin-left: 500;
+  }
+}
+
+
+.gifs { 
+  position: absolute;
+  top: 0;
+  
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 
@@ -246,10 +262,10 @@ video {
   width: 400px;
   height: 400px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(110, 110, 110, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -263,10 +279,10 @@ video {
   width: 400px;
   height: 460px;
   background: transparent;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 2px solid rgb(255, 255, 255);
   border-radius: 20px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 30px rgba(110, 110, 110, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
