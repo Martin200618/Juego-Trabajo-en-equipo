@@ -5,6 +5,8 @@
   font-family: "Nunito", sans-serif;
   font-size: 25px;
   position: relative;
+
+
 }
 
 /*Estilos del Body Cuerpo de las paginas */
@@ -17,12 +19,11 @@ body {
 
 /* Responsive  */
 @media (max-width: 600px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    height: auto;
-    width: 100px;
-  }
+
+    body{
+        background-repeat: no-repeat;
+    }
+  
   .container_principalindex {
     width: auto;
   }
@@ -39,7 +40,7 @@ body {
 
 .astronautarotativo {
   width: 1000px;
-  height: 900px;
+  height: 500px;
   text-align: center;
   margin: 0 auto;
 }
@@ -170,7 +171,7 @@ body {
 }
 
 .perfil_img img {
-  margin-top: 10px;
+  margin-top: 50px;
   position: absolute;
   width: 50px;
   height: 50px;
@@ -178,9 +179,17 @@ body {
 
 /* Responsive para pantallas más pequeñas */
 @media (max-width: 768px) {
+    
   body {
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .perfil_img{
+    margin-left: 10px;
+    margin-top: 50px;
+    position: absolute;
   }
 
   .astronautarotativo {
@@ -210,6 +219,10 @@ body {
 }
 
 @media (max-width: 480px) {
+
+    body{
+        background-repeat: no-repeat;
+    }
     .astronautarotativo {
       width: 100%;
       margin-top: 10px;
@@ -232,4 +245,11 @@ body {
     .borde_animado {
       font-size: 1.2rem;
     }
+  }
+
+
+  @media (max-width: 480px) {
+    body{
+        background-repeat: no-repeat
+    };
   }

@@ -1,7 +1,6 @@
 body {
     background-image: url('/Logos/fondolobbycrearsala.webp'); /* Cambia esto con la ruta de la imagen de fondo */
     background-size: cover;
-    background-repeat: no-repeat;
     background-position: center;
     height: 100vh;
     display: flex;
@@ -184,7 +183,7 @@ h1 {
     }
     
     .btn {
-    /* Los botones ocuparán todo el ancho del contenedor */
+       
         font-size: 1rem;
         padding: 10px;
     }
@@ -198,8 +197,7 @@ h1 {
 
     .casalogo{
         position: absolute;
-        margin-top: -520px;
-        display: flex;
+        margin-top: -550px;
     }
     h1 {
         font-size: 2rem;
@@ -208,7 +206,7 @@ h1 {
     .btn {
         font-size: 1rem;
         padding: 8px;
-        width: 100%;
+
     }
 
     .container_lobby {
@@ -225,5 +223,17 @@ h1 {
     .btn {
         font-size: 0.9rem;
         padding: 8px;
+    }
+}
+
+@media (max-width: 280px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 0.9rem;
+        padding: 8px;
+        width: 100%;
     }
 }
