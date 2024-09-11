@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 25px;
+  position: relative;
+}
+
+/*Estilos del Body Cuerpo de las paginas */
+body {
+  background-image: url(/Logos/Video-Fondogif.gif);
+  justify-content: center; /* Centra los containers */
+  align-items: center; /* Alinea los containers */
+  min-height: 100vh;
+}
+
+/* Responsive  */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 100px;
+  }
+  .container_principalindex {
+    width: auto;
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.astronautarotativo {
+  width: 1000px;
+  height: 900px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.astronauta {
+  margin: 0 auto;
+  margin-top: 10px;
+  width: 250px;
+  height: auto;
+  animation: rotate 10s linear infinite;
+}
+
+.astronautarotativo h1 {
+  font-weight: 700;
+  margin-top: 10px;
+  color: white;
+}
+
+.botones_modos {
+  width: 1000px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: space-around;
+
+  padding: 0;
+}
+
+.botones_modos a {
+  font-weight: 500;
+  border-radius: 20px;
+  border: solid 2px white;
+
+  margin: 10px 140px;
+  padding: 10px 30px;
+  position: relative;
+  text-decoration: none;
+  color: #dee2e6;
+}
+
+.modo-historia:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+  font-weight: 600;
+  transform: scale(1.1);
+  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
+  border-radius: 45px;
+}
+
+.modo-multijugador:hover {
+  color: #ffffff;
+  transition: all 0.3s;
+  font-weight: 600;
+  transform: scale(1.1);
+  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
+  border-radius: 45px;
+}
+
+.modo-historia {
+  text-align: left;
+}
+
+.modo-multijugador {
+  text-align: right;
+}
+
+/* Agregar sombra que simule un borde alrededor de las letras */
+.borde_animado {
+  margin-top: 15px;
+  animation: cambiarColor 3s infinite linear;
+}
+
+/* Animación para cambiar los colores del borde */
+@keyframes cambiarColor {
+  0% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  20% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+
+  30% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+
+  40% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+
+  50% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  65% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+  70% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  80% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+  90% {
+    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
+      -2px -2px 0px #ff00ff;
+  }
+  100% {
+    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
+      /* Sombra verde */ 2px -2px 0px #ff2f00,
+      /* Sombra azul */ -2px -2px 0px #ff0062;
+  }
+}
+
+.perfil_img {
+  height: 50px;
+  text-align: right;
+}
+
+.perfil_img img {
+  margin-top: 10px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive para pantallas más pequeñas */
+@media (max-width: 768px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .astronautarotativo {
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .astronauta {
+    width: 150px;
+  }
+
+  .botones_modos {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .botones_modos a {
+    margin: 10px auto;
+    padding: 10px 20px;
+  }
+
+  .borde_animado {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+    .astronautarotativo {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    .astronauta {
+      width: 120px;
+    }
+
+    .botones_modos{
+        display: flex;
+    }
+  
+    .botones_modos a {
+        display: flex;
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    .borde_animado {
+      font-size: 1.2rem;
+    }
+  }

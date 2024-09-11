@@ -1,4 +1,4 @@
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,21 +7,17 @@
   font-family: "Nunito", sans-serif;
   font-size: 25px;
   position: relative;
-
-
 }
-
 
 /*Estilos del Body Cuerpo de las paginas */
 body {
-
+  background-image: url(/Logos/Video-Fondogif.gif);
   justify-content: center; /* Centra los containers */
   align-items: center; /* Alinea los containers */
   min-height: 100vh;
 }
 
-
- /*Estilos de la barra de navegación */
+/*Estilos de la barra de navegación */
 .header {
   display: flex;
   justify-content: flex-end;
@@ -34,8 +30,6 @@ body {
   background: transparent;
   backdrop-filter: blur(2px);
 }
-
-
 
 /*Esto lo que hace es que cambie de color según el porcentaje blanco - negro - blanco
 de la parte de abajo del borde del header */
@@ -136,12 +130,10 @@ de la parte de abajo del borde del header */
   transform: scale(1.1);
 }
 
-#hero{
+#hero {
   min-height: 100vh;
   position: relative;
 }
-
-
 
 .capa {
   position: absolute;
@@ -203,7 +195,6 @@ de la parte de abajo del borde del header */
   position: absolute;
 }
 
-
 /*Estilos de las anclas del index o pagina de aterrizaje, principal */
 .a1,
 .a2,
@@ -223,38 +214,18 @@ de la parte de abajo del borde del header */
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 500px;
+    width: 100px;
   }
-
-  .btn{
-    margin-left: 115px ;
-  }
-
-
-
-  .container_principalindex{
-    margin-left: 500;
+  .container_principalindex {
+    width: auto;
   }
 }
-
-
-.gifs { 
-  position: absolute;
-  top: 0;
-  
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
 
 /*Container mayor de inicio de sesion y register */
 .container_mayor {
   margin-top: 15px;
   width: 100%; /* O un ancho específico */
 }
-
 
 /*Container de inicio de sesion */
 .container_padre_login {
@@ -338,7 +309,6 @@ de la parte de abajo del borde del header */
   display: inline-block;
   animation: animacionInput 1.5s ease-in-out infinite;
 }
-
 
 /*Esto lo que hace es traladar la barra del input -7px hacia arriba del login y register */
 @keyframes animacionInput {
@@ -457,7 +427,8 @@ remember-forgot {
   text-decoration: underline;
 }
 
-.btna { /* Estilo del botón de Entrar y Registrar  */
+.btna {
+  /* Estilo del botón de Entrar y Registrar  */
   width: 100%;
   height: 45px;
   background-color: #ffffff;
@@ -628,151 +599,4 @@ remember-forgot {
   box-shadow: black 4px 4px 4px;
 }
 
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
-.astronautarotativo {
-  width: 1000px;
-  height: 900px;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.astronauta {
-  margin: 0 auto;
-  margin-top: 10px;
-  width: 250px;
-  height: auto;
-  animation: rotate 10s linear infinite;
-}
-
-.astronautarotativo h1 {
-  font-weight: 700;
-  margin-top: 10px;
-  color: white;
-}
-
-.botones_modos {
-  width: 1000px;
-  height: 100px;
-  margin: 0 auto;
-  text-align: center;
-  justify-content: space-around;
-
-  padding: 0;
-}
-
-.botones_modos a {
-  font-weight: 500;
-  border-radius: 20px;
-  border: solid 2px white;
-
-  margin: 10px 140px;
-  padding: 10px 30px;
-  position: relative;
-  text-decoration: none;
-  color: #dee2e6;
-}
-
-
-.modo-historia:hover {
-  color: #ffffff;
-  transition: all 0.3s;
-  font-weight: 600;
-  transform: scale(1.1);
-  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
-  border-radius: 45px;
-}
-
-.modo-multijugador:hover {
-  color: #ffffff;
-  transition: all 0.3s;
-  font-weight: 600;
-  transform: scale(1.1);
-  box-shadow: rgb(255, 255, 255) 2px 2px 4px 4px;
-  border-radius: 45px;
-}
-
-.modo-historia {
-  text-align: left;
-}
-
-.modo-multijugador {
-  text-align: right;
-}
-
-/* Agregar sombra que simule un borde alrededor de las letras */
-.borde_animado {
-  animation: cambiarColor 3s infinite linear;
-}
-
-/* Animación para cambiar los colores del borde */
-@keyframes cambiarColor {
-  0% {
-    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
-      -2px -2px 0px #ff00ff;
-  }
-  20% {
-    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
-      /* Sombra verde */ 2px -2px 0px #ff2f00,
-      /* Sombra azul */ -2px -2px 0px #ff0062;
-  }
-
-  30% {
-    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
-      -2px -2px 0px #ff00ff;
-  }
-
-  40% {
-    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
-      /* Sombra verde */ 2px -2px 0px #ff2f00,
-      /* Sombra azul */ -2px -2px 0px #ff0062;
-  }
-
-  50% {
-    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
-      -2px -2px 0px #ff00ff;
-  }
-  65% {
-    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
-      /* Sombra verde */ 2px -2px 0px #ff2f00,
-      /* Sombra azul */ -2px -2px 0px #ff0062;
-  }
-  70% {
-    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
-      -2px -2px 0px #ff00ff;
-  }
-  80% {
-    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
-      /* Sombra verde */ 2px -2px 0px #ff2f00,
-      /* Sombra azul */ -2px -2px 0px #ff0062;
-  }
-  90% {
-    text-shadow: 2px 2px 0px #ff0000, -2px 2px 0px #00ff00, 2px -2px 0px #0000ff,
-      -2px -2px 0px #ff00ff;
-  }
-  100% {
-    text-shadow: 2px 2px 0px #ffe600, /* Sombra roja */ -2px 2px 0px #ff9d00,
-      /* Sombra verde */ 2px -2px 0px #ff2f00,
-      /* Sombra azul */ -2px -2px 0px #ff0062;
-  }
-}
-
-.perfil_img{
-
-  height: 50px;
-  text-align: right;
-}
-
-.perfil_img img{
-  margin-top: 10px;
-  position: absolute;
-  width: 50px;
-  height: 50px;
-}
