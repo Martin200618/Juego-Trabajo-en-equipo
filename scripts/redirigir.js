@@ -7,7 +7,7 @@ galaxiaCaosButton.onclick = function() {
 };
 
 clasificacionEstelarButton.onclick = function() {
-    window.location.href = 'Clasificacion-Estelar.html';
+    window.location.href = 'Juego-Clasificacion-Estelar.html';
 };
 
 tormentaCosmicaButton.onclick = function() {

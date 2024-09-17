@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/Logos/Aguneronegroprimermodo.jpg'); /* Cambia esto con la ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    flex-direction: column; /* Para que el puntaje se muestre encima del agujero negro */
+}
+
+.estrellas{
+    position: absolute;
+    position: relative;
+    display: flex;
+}
+
+.estrellas span{
+    position: absolute;
+    background-image: url("./fondo/estrella.png");
+    width: 30px;
+    height: 30px;
+    animation: animate 15s linear infinite;
+    animation-duration: calc(125s / var(--1));
+}
+
+@keyframes animate{
+    0% {
+        transform: translateX(100%) scale(0);
+    }
+    100% {
+        transform: translateX(-10%) scale(1);
+    }
+}
+
+#gamerarea{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+#player{
+    background-image: url('/Logos/aeronave.png');
+    position: absolute;
+    width: 250px;
+    height: 200px;
+    transform: rotate(90deg);
+
+}
+
+
+
+.contenedor{
+    border: solid 2px white;
+    width: 500px;
+    height: 500px;
+}
